@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        header {
+           text-align: center;
+        }
+
+        .background {
+            height: 650px;
+            width: 100%;
+            background-image: linear-gradient(180deg, rgb(217, 105, 105),white,rgb(109, 214, 109));
+        }
+
+        form {
+            border: 5px double rgb(0, 0, 0);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        label {
+            padding: 10px;
+        }
+        footer{
+            padding: 20px;
+           display:flex;
+           justify-content: center;
+        }
+    </style>
+</head>
+
+<body class="background">
+    <form action="">
+        <header>
+            <h1>PROJECT NAME</h1>
+        </header>
+        <section>
+            <label for="">Name</label> : <input type="text" name="name" placeholder="your name"><br><br>
+            <label>Age</label> : <input type="number" name="age" placeholder="your age"><br><br>
+            <label>State</label> : <select>
+                <option>Delhi</option>
+                <option>U.P.</option>
+                <option>M.P.</option>
+                <option>Rajesthan</option>
+                <option>Telangana</option>
+            </select><br><br>
+            <label>Gender</label> : <label for="">male</label> <input type="radio" checked value="male" name="gender">
+            <label for="">female</label> <input type="radio" value="female" name="gender"> <br><br>
+            <label>Language</label> : <label>java</label><input type="checkbox" value="java" name="language">
+            <label>javascript</label><input type="checkbox" value="javascript" name="language">
+            <label>Paythan</label><input type="checkbox" value="Paythan" name="language">
+            <label> c</label><input type="checkbox" value=" c" name="language">
+            <label> c++</label><input type="checkbox" value=" c++" name="language">
+
+        </section>
+        <footer>
+            <button>Submit</button>  <input type="reset">
+        </footer>
+
+    </form>
+</body>
+
+</html>
